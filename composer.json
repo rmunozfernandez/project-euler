@@ -1,0 +1,20 @@
+{
+    "name": "rmunozfernandez/project-euler",
+    "description": "My solutions for Projecteuler.net exercises",
+    "type": "challenge",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Exercice001\\": "src/001-problem",
+            "Exercice002\\": "src/002-problem"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [{
+        "name": "rmunozfernandez",
+        "email": "rmunoz.it@gmail.com"
+    }],
+    "require": {}
+}
