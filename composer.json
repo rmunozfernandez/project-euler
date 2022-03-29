@@ -8,7 +8,8 @@
             "Exercice001\\": "src/001-problem",
             "Exercice002\\": "src/002-problem",
             "Exercice003\\": "src/003-problem",
-            "Exercice004\\": "src/004-problem"
+            "Exercice004\\": "src/004-problem",
+            "Exercice005\\": "src/005-problem"
         },
         "files": [
             "src/helpers.php"
