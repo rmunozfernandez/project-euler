@@ -18,6 +18,10 @@ function LargestPrimeFactor($number){
     return Solution003::LargestPrimeFactor($number);
 }
 
+function NextPrimeNumber($number){
+    return Solution003::NextPrimeNumber($number);
+}
+
 function LargestPalindromeProduct($number){
     return Solution004::LargestPalindromeProduct($number);
 }

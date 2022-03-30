@@ -23,7 +23,7 @@ class Solution003{
         return $largestPrimeNumber;
     }
 
-    private static function NextPrimeNumber($number)
+    public static function NextPrimeNumber($number)
     {
         do {
             ++$number;

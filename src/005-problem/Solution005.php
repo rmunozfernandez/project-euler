@@ -5,29 +5,63 @@ namespace Exercice005;
 class Solution005{
     public static function SmallestMultiple($maxNumber)
     {
-        $smallestMultiple = 2;
-
-        if ( $maxNumber <= 1 )
-        {
-            return 1;
-        }
         
-        do
+        $numbers = [];
+        $mcm = [];
+        $index = $maxNumber;
+        
+        while ( $index > 0 )
         {
-            $divider = $maxNumber;
-            do
+            $numbers[$index] = $index;
+            --$index;
+        }
+
+        $finish = false;
+
+        $primeNumber = 2;
+        while ( !$finish )
+        {
+            $located = false;
+            $finish = true;
+
+            foreach ( $numbers as $num )
             {
-                if ( $smallestMultiple % $divider != 0 )
+                if ( $num % $primeNumber == 0 )
                 {
-                    break;
+                    $located = true;
                 }
 
-                if ( $divider == 1 )
+                if ( $num > 1 )
                 {
-                    return $smallestMultiple;
+                    $finish = false;
                 }
-            } while ( --$divider );
-            
-        } while ( $smallestMultiple = 2 + $smallestMultiple );
+            }
+
+            if ( $located )
+            {
+                $mcm[] = $primeNumber;
+                $i = 1;
+                while ( $i <= $maxNumber ){
+                    if ( $numbers[$i] % $primeNumber == 0 ){
+                        $numbers[$i] = $numbers[$i] / $primeNumber;
+                    }                    
+                    ++$i;
+                }
+            }
+
+            if ( !$located )
+            {
+                $primeNumber = NextPrimeNumber($primeNumber);            
+            }
+        }
+
+        $product = 1;
+
+        foreach ( $mcm as $factor)
+        {
+            $product *= $factor;
+        }
+
+        return $product;
     }
 }
