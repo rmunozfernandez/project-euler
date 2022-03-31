@@ -5,6 +5,7 @@ use Exercice002\Solution002;
 use Exercice003\Solution003;
 use Exercice004\Solution004;
 use Exercice005\Solution005;
+use Exercice006\Solution006;
 
 function MultiplesOfThreeOrFive($limit){
     return Solution001::MultiplesOfThreeOrFive($limit);
@@ -28,4 +29,8 @@ function LargestPalindromeProduct($number){
 
 function SmallestMultiple($maxNumber){
     return Solution005::SmallestMultiple($maxNumber);
+}
+
+function SumSquareDifference($maxNumber){
+    return Solution006::SumSquareDifference($maxNumber);
 }

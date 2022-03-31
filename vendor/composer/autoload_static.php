@@ -13,6 +13,7 @@ class ComposerStaticInit77451ef733fb7cd6751645f950ec3c0d
     public static $prefixLengthsPsr4 = array (
         'E' => 
         array (
+            'Exercice006\\' => 12,
             'Exercice005\\' => 12,
             'Exercice004\\' => 12,
             'Exercice003\\' => 12,
@@ -22,6 +23,10 @@ class ComposerStaticInit77451ef733fb7cd6751645f950ec3c0d
     );
 
     public static $prefixDirsPsr4 = array (
+        'Exercice006\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/006-problem',
+        ),
         'Exercice005\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/005-problem',
