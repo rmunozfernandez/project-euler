@@ -6,6 +6,7 @@ use Exercice003\Solution003;
 use Exercice004\Solution004;
 use Exercice005\Solution005;
 use Exercice006\Solution006;
+use Exercice007\Solution007;
 
 function MultiplesOfThreeOrFive($limit){
     return Solution001::MultiplesOfThreeOrFive($limit);
@@ -33,4 +34,8 @@ function SmallestMultiple($maxNumber){
 
 function SumSquareDifference($maxNumber){
     return Solution006::SumSquareDifference($maxNumber);
+}
+
+function Prime10001st(){
+    return Solution007::Prime10001st();
 }
