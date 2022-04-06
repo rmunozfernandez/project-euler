@@ -8,6 +8,7 @@ use Exercice005\Solution005;
 use Exercice006\Solution006;
 use Exercice007\Solution007;
 use Exercice008\Solution008;
+use Exercice009\Solution009;
 
 function MultiplesOfThreeOrFive($limit){
     return Solution001::MultiplesOfThreeOrFive($limit);
@@ -45,4 +46,9 @@ function LargestProductInASeries( $maxNumber )
 {
     $largestProductInASeries = new Solution008;
     return $largestProductInASeries->LargestProductInASeries( $maxNumber );
+}
+
+function SpecialPythagoreanTriplet()
+{
+    return Solution009::SpecialPythagoreanTriplet();
 }
