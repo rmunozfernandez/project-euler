@@ -34,16 +34,19 @@ class Solution003{
 
     public static function IsPrime($number)
     {
-        $divider = $number - 1;
-
-        while ($divider > 1)
-        {
-            if ($number % $divider == 0)
-            {
+        $i = 2;
+ 
+        if ($number == 2) {
+            return true;
+        }
+    
+        while ($i <= sqrt($number)) {
+            if ($number % $i == 0) {
                 return false;
             }
-            --$divider;
+            $i++;
         }
+    
         return true;
     }
 }
