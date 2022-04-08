@@ -48,7 +48,7 @@ function LargestProductInASeries( $maxNumber )
     return $largestProductInASeries->LargestProductInASeries( $maxNumber );
 }
 
-function SpecialPythagoreanTriplet()
+function SpecialPythagoreanTriplet( $maxNumber )
 {
-    return Solution009::SpecialPythagoreanTriplet();
+    return Solution009::SpecialPythagoreanTriplet( $maxNumber );
 }
