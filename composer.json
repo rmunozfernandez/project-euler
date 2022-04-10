@@ -14,7 +14,8 @@
             "Exercice007\\": "src/007-problem",
             "Exercice008\\": "src/008-problem",
             "Exercice009\\": "src/009-problem",
-            "Exercice010\\": "src/010-problem"
+            "Exercice010\\": "src/010-problem",
+            "Exercice011\\": "src/011-problem"
         },
         "files": [
             "src/helpers.php"

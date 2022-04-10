@@ -11,4 +11,5 @@ require __DIR__ . '/vendor/autoload.php';
 //echo 'Exercice 007 Result : ' . Prime10001st();
 //echo 'Exercice 008 Result : ' . LargestProductInASeries( 13 );
 //echo 'Exercice 009 Result : ' . SpecialPythagoreanTriplet( 1000 );
-echo 'Exercice 010 Result : ' . SummationOfPrimes(2000000);
+//echo 'Exercice 010 Result : ' . SummationOfPrimes(2000000);
+echo 'Exercice 011 Result : ' . LargestProductInAGrid();

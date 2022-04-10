@@ -10,6 +10,7 @@ use Exercice007\Solution007;
 use Exercice008\Solution008;
 use Exercice009\Solution009;
 use Exercice010\Solution010;
+use Exercice011\Solution011;
 
 function MultiplesOfThreeOrFive($limit){
     return Solution001::MultiplesOfThreeOrFive($limit);
@@ -57,4 +58,9 @@ function SpecialPythagoreanTriplet( $maxNumber )
 function SummationOfPrimes( $limit )
 {
     return Solution010::SummationOfPrimes( $limit );
+}
+
+function LargestProductInAGrid()
+{
+    return Solution011::LargestProductInAGrid();
 }
