@@ -33,13 +33,10 @@ class Solution011
     {
         $largestProduct = 0;
 
-        $largestProduct = self::Mayor( $largestProduct, self::HorizontalProduct() );
-
-        $largestProduct = self::Mayor( $largestProduct, self::VerticalProduct() );
-
-        $largestProduct = self::Mayor( $largestProduct, self::DiagonalProduct() );
-
-        $largestProduct = self::Mayor( $largestProduct, self::BackdiagonalProduct() );
+        $largestProduct = max( $largestProduct, self::HorizontalProduct() );
+        $largestProduct = max( $largestProduct, self::VerticalProduct() );
+        $largestProduct = max( $largestProduct, self::DiagonalProduct() );
+        $largestProduct = max( $largestProduct, self::BackDiagonalProduct() );
 
         return $largestProduct;
     }
@@ -65,7 +62,7 @@ class Solution011
                     $y = $limitY - 4 + 1;
                     ++$limitY;
 
-                    $maxProduct = self::Mayor( $maxProduct, $product );
+                    $maxProduct = max( $maxProduct, $product );
                     $product = 1;
                 }
             }
@@ -97,7 +94,7 @@ class Solution011
                     $x = $limitX - 4 + 1;
                     ++$limitX;
 
-                    $maxProduct = self::Mayor( $maxProduct, $product );
+                    $maxProduct = max( $maxProduct, $product );
                     $product = 1;
                 }
             }
@@ -130,7 +127,7 @@ class Solution011
 
                 if ( $x2 == $limitX )
                 {
-                    $maxProduct = self::Mayor( $maxProduct, $product );
+                    $maxProduct = max( $maxProduct, $product );
                     $product = 1;
                     $x2 = $x;
                     ++$y;
@@ -166,7 +163,7 @@ class Solution011
 
                 if ( $y2 == $limitY )
                 {
-                    $maxProduct = self::Mayor( $maxProduct, $product );
+                    $maxProduct = max( $maxProduct, $product );
                     $product = 1;
                     $x2 = $x;
                     ++$y;
@@ -179,15 +176,5 @@ class Solution011
         }
 
         return $maxProduct;
-    }
-
-    protected static function Mayor( $firstNumber, $secondNumber )
-    {
-        if ( $firstNumber > $secondNumber )
-        {
-            return $firstNumber;
-        }
-
-        return $secondNumber;
     }
 }
