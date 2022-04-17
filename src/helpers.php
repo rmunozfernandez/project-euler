@@ -11,6 +11,7 @@ use Exercice008\Solution008;
 use Exercice009\Solution009;
 use Exercice010\Solution010;
 use Exercice011\Solution011;
+use Exercice012\Solution012;
 
 function MultiplesOfThreeOrFive($limit){
     return Solution001::MultiplesOfThreeOrFive($limit);
@@ -63,4 +64,9 @@ function SummationOfPrimes( $limit )
 function LargestProductInAGrid()
 {
     return Solution011::LargestProductInAGrid();
+}
+
+function HighlyDivisibleTriangularNumber()
+{
+    return Solution012::HighlyDivisibleTriangularNumber();
 }
